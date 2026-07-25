@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>1089 Days</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="score-box">
+    ⭐<span id="score">0</span>
+</div>
+
+<audio id="bgm" loop>
+    <source src="music/bgm.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- ========== Scene 1 Opening ========== -->
+
+<section id="opening" class="page">
+
+    <p class="line line1">
+        Every story has a beginning.
+    </p>
+
+    <p class="line line2">
+        Ours
+        <button id="beginBtn">began</button>
+        on
+    </p>
+
+    <h1 class="line line3">
+        August 1st, 2023
+    </h1>
+
+</section>
+
+<!-- ========== Scene 2 Quiz ========== -->
+
+<section id="quizScene" class="page hidden">
+
+    <div id="intro">
+
+        <h1>关于这些——你还记得吗？</h1>
+
+        <p>嘿嘿嘿！积分换好礼，让我来考考你！</p>
+
+    </div>
+
+    <div id="quiz" class="hidden">
+
+        <h2 id="questionTitle"></h2>
+
+        <div id="memoryIntro"></div>
+
+        <div id="questionContent"></div>
+        
+        <div id="answerArea">
+        
+         <input
+         id="answerInput"
+         type="text"
+         placeholder="请输入答案">
+         
+         <button id="submitBtn">
+            Next →
+        </button>
+    
+    </div>
+
+        <p id="feedback"></p>
+
+    </div>
+
+</section>
+
+<!-- ========== Scene 3 Ending ========== -->
+
+<section id="ending" class="page hidden">
+
+    <h1>恭喜你，总共获得了1089分！</h1>
+
+    <h2>Happy 20th Birthday to 我亲爱的牛牛！</h2>
+
+    <p id="letter">
+
+        1089，<br>
+
+        是我们一起走过的天数 <br><br>
+
+        谢谢你的出现 <br>
+
+        从高三到今天这个特别的日子。<br>
+
+        愿未来的每一年，<br>
+
+        你都能平安快乐、得偿所愿。<br><br>
+
+        20岁生日快乐❤️
+
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
